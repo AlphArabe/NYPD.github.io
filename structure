@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casier Judiciaire - NYPD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Police de New York</h1>
+    <p>Base de données des casiers judiciaires (Simulé)</p>
+  </header>
+
+  <main>
+    <section id="login">
+      <h2>Connexion sécurisée</h2>
+      <form id="loginForm">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Se connecter</button>
+      </form>
+    </section>
+
+    <section id="search" style="display:none;">
+      <h2>Rechercher un dossier</h2>
+      <form id="searchForm">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="id">ID de dossier :</label>
+        <input type="text" id="id" name="id">
+        
+        <button type="submit">Rechercher</button>
+      </form>
+
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Police de New York. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
